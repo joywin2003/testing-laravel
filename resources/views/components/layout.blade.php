@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout</title>
 </head>
+
 <body>
     <nav>
-        <a href="/">home</a>
-        <a href="/about">about</a>
-        <a href="/contact">contact</a>
+        <x-nav-link>Home</x-nav-link>
+        <x-nav-link>about</x-nav-link>
+        <x-nav-link>contact</x-nav-link>
     </nav>
-
-    <?php echo $slot; ?>
+    
+    {{$slot}}
 </body>
+
 </html>
