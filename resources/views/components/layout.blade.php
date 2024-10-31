@@ -13,7 +13,9 @@
         <x-nav-link>about</x-nav-link>
         <x-nav-link>contact</x-nav-link>
     </nav>
-    
+    <header>
+        <h1>{{$heading}}</h1>
+    </header>
     {{$slot}}
 </body>
 
