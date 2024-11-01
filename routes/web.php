@@ -7,8 +7,33 @@ Route::get('/', function () {
 });
 
 
-Route::get('/about', function () {
-    return view('about');
+Route::get('/jobs', function () {
+    return view('jobs',
+        [
+            'jobs' => [
+                [
+                    "title" => "Programmer",
+                    "salary" => "$80,000",
+                ],
+                [
+                    "title" => "Designer",
+                    "salary" => "$70,000",
+                ],
+                [
+                    "title" => "Developer",
+                    "salary" => "$90,000",
+                ],
+                [
+                    "title" => "Manager",
+                    "salary" => "$100,000",
+                ],
+                [
+                    "title" => "CEO",
+                    "salary" => "$200,000",
+                ]
+            ]
+        ]
+    );
 });
 
 

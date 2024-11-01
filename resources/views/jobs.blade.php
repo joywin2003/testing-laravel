@@ -1,6 +1,11 @@
 <x-layout>
     <x-slot:heading>
-        Jobs
+        Job Listings
     </x-slot:heading>
-    <h1>this is the job page</h1>
+
+    <ul>
+        @foreach($jobs as $job)
+            <li><strong>{{ $job["title"] }}</strong>: Pays {{$job["salary"]}} per year</li>
+        @endforeach
+    </ul>
 </x-layout>
